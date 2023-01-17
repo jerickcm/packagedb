@@ -1,0 +1,29 @@
+{
+	"name": "jerickcm/inspire",
+	"description": "\"first laravel packages\"",
+	"autoload": {
+		"psr-4": {
+			"Jerickcm\\Packagedb\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "jerick",
+			"email": "jmangaluz@gmail.com"
+		}
+	],
+	"require": {
+		"guzzlehttp/guzzle": "^7.5",
+        "fzaninotto/faker": "^1.9"
+	},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jerickcm\\Packagedb\\RandomableServiceProvider"
+            ],
+            "aliases": {
+                "Randomable": "Jerickcm\\Packagedb\\Facades\\RandomableFacade"
+            }
+        }
+    }
+}
